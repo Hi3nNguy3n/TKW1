@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liên hệ – CineTicket</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="brand"><span class="brand-logo">🎬</span><span>CineTicket</span></a>
+        <input id="menu" class="nav-toggle" type="checkbox" />
+        <label for="menu">☰ Menu</label>
+        <nav class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="movies.html">Phim</a>
+          <a href="showtimes.html">Lịch chiếu</a>
+          <a href="booking.html">Đặt vé</a>
+          <a class="active" href="contact.html">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h2>Liên hệ với chúng tôi</h2>
+        <div class="grid grid-2">
+          <div class="panel stack">
+            <h3>Trung tâm hỗ trợ</h3>
+            <div class="muted">Thời gian: 8:00 – 22:00 mỗi ngày</div>
+            <div>Email: support@cineticket.local</div>
+            <div>Hotline: 1900 0000</div>
+            <div class="muted">Địa chỉ: 123 Đường Phim Ảnh, Quận 1, TP.HCM</div>
+          </div>
+          <form class="panel form" action="thanks.html" method="get">
+            <div class="row">
+              <div class="field"><label for="full">Họ tên</label><input id="full" class="input" name="full" required></div>
+              <div class="field"><label for="tel">Điện thoại</label><input id="tel" class="input" name="tel" required></div>
+              <div class="field"><label for="mail">Email</label><input id="mail" class="input" name="mail" type="email" required></div>
+              <div class="field"><label for="topic">Chủ đề</label><select id="topic" name="topic"><option>Hỗ trợ đặt vé</option><option>Góp ý dịch vụ</option><option>Khác</option></select></div>
+            </div>
+            <div class="field"><label for="msg">Nội dung</label><textarea id="msg" name="msg" rows="5" placeholder="Mô tả yêu cầu của bạn"></textarea></div>
+            <div class="split"><span></span><button class="btn btn-primary" type="submit">Gửi liên hệ</button></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="split"><div>© 2025 CineTicket</div><div class="muted">Hỗ trợ nhanh chóng, nhiệt tình</div></div>
+      </div>
+    </footer>
+  </body>
+  </html>
+

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lịch chiếu – CineTicket</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="brand"><span class="brand-logo">🎬</span><span>CineTicket</span></a>
+        <input id="menu" class="nav-toggle" type="checkbox" />
+        <label for="menu">☰ Menu</label>
+        <nav class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="movies.html">Phim</a>
+          <a class="active" href="showtimes.html">Lịch chiếu</a>
+          <a href="booking.html">Đặt vé</a>
+          <a href="contact.html">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h2>Lọc lịch chiếu</h2>
+        <form class="form panel" action="#" method="get">
+          <div class="row">
+            <div class="field">
+              <label for="cinema">Rạp</label>
+              <select id="cinema" name="cinema">
+                <option>CineTicket Vincom</option>
+                <option>CineTicket Crescent</option>
+                <option>CineTicket Landmark</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Ngày</label>
+              <select id="date" name="date">
+                <option>Hôm nay</option>
+                <option>Ngày mai</option>
+                <option>Cuối tuần</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="format">Định dạng</label>
+              <select id="format" name="format">
+                <option>Tất cả</option>
+                <option>2D</option>
+                <option>3D</option>
+                <option>IMAX</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>&nbsp;</label>
+              <a class="btn btn-primary" href="#results">Xem kết quả</a>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="section" id="results">
+        <h2>Lịch chiếu hôm nay</h2>
+        <div class="panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Rạp</th>
+                <th>Phim</th>
+                <th>Suất chiếu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CineTicket Vincom</td>
+                <td>Siêu Anh Hùng 9</td>
+                <td><div class="time-list"><span class="time">09:30</span><span class="time">12:45</span><span class="time">15:10</span><span class="time">18:30</span><a class="btn btn-primary" href="booking.html">Đặt vé</a></div></td>
+              </tr>
+              <tr>
+                <td>CineTicket Crescent</td>
+                <td>Hành Tinh Bí Ẩn</td>
+                <td><div class="time-list"><span class="time">10:00</span><span class="time">13:20</span><span class="time">16:00</span><span class="time">20:15</span><a class="btn btn-primary" href="booking.html">Đặt vé</a></div></td>
+              </tr>
+              <tr>
+                <td>CineTicket Landmark</td>
+                <td>Nhịp Đập Trái Tim</td>
+                <td><div class="time-list"><span class="time">08:45</span><span class="time">11:50</span><span class="time">14:30</span><span class="time">19:00</span><a class="btn btn-primary" href="booking.html">Đặt vé</a></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="split"><div>© 2025 CineTicket</div><div class="muted">Lịch chiếu cập nhật mỗi ngày</div></div>
+      </div>
+    </footer>
+  </body>
+  </html>
+

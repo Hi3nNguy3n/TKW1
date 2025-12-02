@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đặt vé – CineTicket</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="brand"><span class="brand-logo">🎬</span><span>CineTicket</span></a>
+        <input id="menu" class="nav-toggle" type="checkbox" />
+        <label for="menu">☰ Menu</label>
+        <nav class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="movies.html">Phim</a>
+          <a href="showtimes.html">Lịch chiếu</a>
+          <a class="active" href="booking.html">Đặt vé</a>
+          <a href="contact.html">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <form class="booking" action="thanks.html" method="get">
+        <!-- Chọn phim / rạp / ngày / giờ -->
+        <section class="panel">
+          <h2>1) Thông tin vé</h2>
+          <div class="row mt-2">
+            <div class="field">
+              <label for="movie">Phim</label>
+              <select id="movie" name="movie" required>
+                <option value="">— Chọn phim —</option>
+                <option>Siêu Anh Hùng 9</option>
+                <option>Hành Tinh Bí Ẩn</option>
+                <option>Nhịp Đập Trái Tim</option>
+                <option>Thám Tử Lừng Danh</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="cinema">Rạp</label>
+              <select id="cinema" name="cinema" required>
+                <option value="">— Chọn rạp —</option>
+                <option>CineTicket Vincom</option>
+                <option>CineTicket Crescent</option>
+                <option>CineTicket Landmark</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Ngày</label>
+              <select id="date" name="date" required>
+                <option>Hôm nay</option>
+                <option>Ngày mai</option>
+                <option>Cuối tuần</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="time">Giờ</label>
+              <select id="time" name="time" required>
+                <option>09:30</option>
+                <option>12:45</option>
+                <option>15:10</option>
+                <option>18:30</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chọn ghế -->
+        <section class="panel">
+          <div class="split">
+            <h2>2) Chọn ghế</h2>
+            <div class="seat-legend">
+              <span class="legend-item"><span class="legend-dot"></span> Trống</span>
+              <span class="legend-item"><span class="legend-dot sel"></span> Đang chọn</span>
+              <span class="legend-item"><span class="legend-dot occ"></span> Đã đặt</span>
+            </div>
+          </div>
+          <div class="mt-2 screen" aria-hidden="true"></div>
+          <div class="seats-wrap" role="group" aria-label="Sơ đồ ghế">
+            <div class="seats">
+              <!-- Rows A to H, 12 seats each -->
+              <!-- Row A -->
+              <div class="row-label"><div class="letter">A</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="A1" name="seat" type="checkbox"><label for="A1">A1</label></div>
+                  <div class="seat"><input id="A2" name="seat" type="checkbox"><label for="A2">A2</label></div>
+                  <div class="seat"><input id="A3" name="seat" type="checkbox" disabled><label for="A3">A3</label></div>
+                  <div class="seat"><input id="A4" name="seat" type="checkbox" disabled><label for="A4">A4</label></div>
+                  <div class="seat vip"><input id="A5" name="seat" type="checkbox"><label for="A5">A5</label></div>
+                  <div class="seat vip"><input id="A6" name="seat" type="checkbox"><label for="A6">A6</label></div>
+                  <div class="seat vip"><input id="A7" name="seat" type="checkbox"><label for="A7">A7</label></div>
+                  <div class="seat vip"><input id="A8" name="seat" type="checkbox"><label for="A8">A8</label></div>
+                  <div class="seat"><input id="A9" name="seat" type="checkbox"><label for="A9">A9</label></div>
+                  <div class="seat"><input id="A10" name="seat" type="checkbox"><label for="A10">A10</label></div>
+                  <div class="seat"><input id="A11" name="seat" type="checkbox"><label for="A11">A11</label></div>
+                  <div class="seat"><input id="A12" name="seat" type="checkbox"><label for="A12">A12</label></div>
+                </div>
+              </div>
+
+              <!-- Row B -->
+              <div class="row-label"><div class="letter">B</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="B1" name="seat" type="checkbox"><label for="B1">B1</label></div>
+                  <div class="seat"><input id="B2" name="seat" type="checkbox"><label for="B2">B2</label></div>
+                  <div class="seat"><input id="B3" name="seat" type="checkbox"><label for="B3">B3</label></div>
+                  <div class="seat"><input id="B4" name="seat" type="checkbox"><label for="B4">B4</label></div>
+                  <div class="seat vip"><input id="B5" name="seat" type="checkbox"><label for="B5">B5</label></div>
+                  <div class="seat vip"><input id="B6" name="seat" type="checkbox" disabled><label for="B6">B6</label></div>
+                  <div class="seat vip"><input id="B7" name="seat" type="checkbox"><label for="B7">B7</label></div>
+                  <div class="seat vip"><input id="B8" name="seat" type="checkbox"><label for="B8">B8</label></div>
+                  <div class="seat"><input id="B9" name="seat" type="checkbox"><label for="B9">B9</label></div>
+                  <div class="seat"><input id="B10" name="seat" type="checkbox"><label for="B10">B10</label></div>
+                  <div class="seat"><input id="B11" name="seat" type="checkbox"><label for="B11">B11</label></div>
+                  <div class="seat"><input id="B12" name="seat" type="checkbox"><label for="B12">B12</label></div>
+                </div>
+              </div>
+
+              <!-- Row C -->
+              <div class="row-label"><div class="letter">C</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="C1" name="seat" type="checkbox"><label for="C1">C1</label></div>
+                  <div class="seat"><input id="C2" name="seat" type="checkbox"><label for="C2">C2</label></div>
+                  <div class="seat"><input id="C3" name="seat" type="checkbox"><label for="C3">C3</label></div>
+                  <div class="seat"><input id="C4" name="seat" type="checkbox"><label for="C4">C4</label></div>
+                  <div class="seat vip"><input id="C5" name="seat" type="checkbox"><label for="C5">C5</label></div>
+                  <div class="seat vip"><input id="C6" name="seat" type="checkbox"><label for="C6">C6</label></div>
+                  <div class="seat vip"><input id="C7" name="seat" type="checkbox" disabled><label for="C7">C7</label></div>
+                  <div class="seat vip"><input id="C8" name="seat" type="checkbox"><label for="C8">C8</label></div>
+                  <div class="seat"><input id="C9" name="seat" type="checkbox"><label for="C9">C9</label></div>
+                  <div class="seat"><input id="C10" name="seat" type="checkbox"><label for="C10">C10</label></div>
+                  <div class="seat"><input id="C11" name="seat" type="checkbox"><label for="C11">C11</label></div>
+                  <div class="seat"><input id="C12" name="seat" type="checkbox"><label for="C12">C12</label></div>
+                </div>
+              </div>
+
+              <!-- Row D -->
+              <div class="row-label"><div class="letter">D</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="D1" name="seat" type="checkbox"><label for="D1">D1</label></div>
+                  <div class="seat"><input id="D2" name="seat" type="checkbox"><label for="D2">D2</label></div>
+                  <div class="seat"><input id="D3" name="seat" type="checkbox"><label for="D3">D3</label></div>
+                  <div class="seat"><input id="D4" name="seat" type="checkbox"><label for="D4">D4</label></div>
+                  <div class="seat vip"><input id="D5" name="seat" type="checkbox"><label for="D5">D5</label></div>
+                  <div class="seat vip"><input id="D6" name="seat" type="checkbox"><label for="D6">D6</label></div>
+                  <div class="seat vip"><input id="D7" name="seat" type="checkbox"><label for="D7">D7</label></div>
+                  <div class="seat vip"><input id="D8" name="seat" type="checkbox" disabled><label for="D8">D8</label></div>
+                  <div class="seat"><input id="D9" name="seat" type="checkbox"><label for="D9">D9</label></div>
+                  <div class="seat"><input id="D10" name="seat" type="checkbox"><label for="D10">D10</label></div>
+                  <div class="seat"><input id="D11" name="seat" type="checkbox"><label for="D11">D11</label></div>
+                  <div class="seat"><input id="D12" name="seat" type="checkbox"><label for="D12">D12</label></div>
+                </div>
+              </div>
+
+              <!-- Row E -->
+              <div class="row-label"><div class="letter">E</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="E1" name="seat" type="checkbox"><label for="E1">E1</label></div>
+                  <div class="seat"><input id="E2" name="seat" type="checkbox"><label for="E2">E2</label></div>
+                  <div class="seat"><input id="E3" name="seat" type="checkbox"><label for="E3">E3</label></div>
+                  <div class="seat"><input id="E4" name="seat" type="checkbox"><label for="E4">E4</label></div>
+                  <div class="seat"><input id="E5" name="seat" type="checkbox" disabled><label for="E5">E5</label></div>
+                  <div class="seat"><input id="E6" name="seat" type="checkbox"><label for="E6">E6</label></div>
+                  <div class="seat"><input id="E7" name="seat" type="checkbox"><label for="E7">E7</label></div>
+                  <div class="seat"><input id="E8" name="seat" type="checkbox"><label for="E8">E8</label></div>
+                  <div class="seat"><input id="E9" name="seat" type="checkbox"><label for="E9">E9</label></div>
+                  <div class="seat"><input id="E10" name="seat" type="checkbox"><label for="E10">E10</label></div>
+                  <div class="seat"><input id="E11" name="seat" type="checkbox"><label for="E11">E11</label></div>
+                  <div class="seat"><input id="E12" name="seat" type="checkbox"><label for="E12">E12</label></div>
+                </div>
+              </div>
+
+              <!-- Row F -->
+              <div class="row-label"><div class="letter">F</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="F1" name="seat" type="checkbox"><label for="F1">F1</label></div>
+                  <div class="seat"><input id="F2" name="seat" type="checkbox" disabled><label for="F2">F2</label></div>
+                  <div class="seat"><input id="F3" name="seat" type="checkbox"><label for="F3">F3</label></div>
+                  <div class="seat"><input id="F4" name="seat" type="checkbox"><label for="F4">F4</label></div>
+                  <div class="seat"><input id="F5" name="seat" type="checkbox"><label for="F5">F5</label></div>
+                  <div class="seat"><input id="F6" name="seat" type="checkbox"><label for="F6">F6</label></div>
+                  <div class="seat"><input id="F7" name="seat" type="checkbox"><label for="F7">F7</label></div>
+                  <div class="seat"><input id="F8" name="seat" type="checkbox"><label for="F8">F8</label></div>
+                  <div class="seat"><input id="F9" name="seat" type="checkbox"><label for="F9">F9</label></div>
+                  <div class="seat"><input id="F10" name="seat" type="checkbox"><label for="F10">F10</label></div>
+                  <div class="seat"><input id="F11" name="seat" type="checkbox"><label for="F11">F11</label></div>
+                  <div class="seat"><input id="F12" name="seat" type="checkbox"><label for="F12">F12</label></div>
+                </div>
+              </div>
+
+              <!-- Row G -->
+              <div class="row-label"><div class="letter">G</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="G1" name="seat" type="checkbox"><label for="G1">G1</label></div>
+                  <div class="seat"><input id="G2" name="seat" type="checkbox"><label for="G2">G2</label></div>
+                  <div class="seat"><input id="G3" name="seat" type="checkbox"><label for="G3">G3</label></div>
+                  <div class="seat"><input id="G4" name="seat" type="checkbox"><label for="G4">G4</label></div>
+                  <div class="seat"><input id="G5" name="seat" type="checkbox"><label for="G5">G5</label></div>
+                  <div class="seat"><input id="G6" name="seat" type="checkbox"><label for="G6">G6</label></div>
+                  <div class="seat"><input id="G7" name="seat" type="checkbox"><label for="G7">G7</label></div>
+                  <div class="seat"><input id="G8" name="seat" type="checkbox"><label for="G8">G8</label></div>
+                  <div class="seat"><input id="G9" name="seat" type="checkbox"><label for="G9">G9</label></div>
+                  <div class="seat"><input id="G10" name="seat" type="checkbox" disabled><label for="G10">G10</label></div>
+                  <div class="seat"><input id="G11" name="seat" type="checkbox"><label for="G11">G11</label></div>
+                  <div class="seat"><input id="G12" name="seat" type="checkbox"><label for="G12">G12</label></div>
+                </div>
+              </div>
+
+              <!-- Row H -->
+              <div class="row-label"><div class="letter">H</div>
+                <div class="row-grid">
+                  <div class="seat"><input id="H1" name="seat" type="checkbox"><label for="H1">H1</label></div>
+                  <div class="seat"><input id="H2" name="seat" type="checkbox"><label for="H2">H2</label></div>
+                  <div class="seat"><input id="H3" name="seat" type="checkbox"><label for="H3">H3</label></div>
+                  <div class="seat"><input id="H4" name="seat" type="checkbox"><label for="H4">H4</label></div>
+                  <div class="seat"><input id="H5" name="seat" type="checkbox"><label for="H5">H5</label></div>
+                  <div class="seat"><input id="H6" name="seat" type="checkbox"><label for="H6">H6</label></div>
+                  <div class="seat"><input id="H7" name="seat" type="checkbox"><label for="H7">H7</label></div>
+                  <div class="seat"><input id="H8" name="seat" type="checkbox"><label for="H8">H8</label></div>
+                  <div class="seat"><input id="H9" name="seat" type="checkbox"><label for="H9">H9</label></div>
+                  <div class="seat"><input id="H10" name="seat" type="checkbox"><label for="H10">H10</label></div>
+                  <div class="seat"><input id="H11" name="seat" type="checkbox" disabled><label for="H11">H11</label></div>
+                  <div class="seat"><input id="H12" name="seat" type="checkbox"><label for="H12">H12</label></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Thông tin khách hàng -->
+        <section class="panel">
+          <h2>3) Thông tin khách hàng</h2>
+          <div class="row mt-2">
+            <div class="field"><label for="name">Họ và tên</label><input class="input" id="name" name="name" placeholder="Nguyễn Văn A" required></div>
+            <div class="field"><label for="phone">Số điện thoại</label><input class="input" id="phone" name="phone" placeholder="09xx xxx xxx" required></div>
+            <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" placeholder="ban@vidu.com" required></div>
+            <div class="field"><label for="note">Ghi chú</label><input class="input" id="note" name="note" placeholder="Yêu cầu khác (nếu có)"></div>
+          </div>
+          <div class="split mt-3">
+            <div class="muted">Giá vé hiển thị tại rạp. Ghế VIP phụ thu.</div>
+            <button class="btn btn-primary" type="submit">Xác nhận đặt vé</button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="split"><div>© 2025 CineTicket</div><div class="muted">Chúc bạn xem phim vui vẻ</div></div>
+      </div>
+    </footer>
+  </body>
+  </html>
+
