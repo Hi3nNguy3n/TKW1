@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #0cb3ff;
+      position: relative;
+
+}
+#logo{
+    color: white;
+    padding: 20px;
+    font-size: 50px;
+    width: 25%;
+}
+#login{
+     position: absolute;
+    top: 20px;
+    right: 20px;
+    border: solid 3px;
+    padding: 20px;
+    border-color:white;
+
+ 
+}
+.menu{
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+
+}
+.menu >a{
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    float: left;
+}
+.leftSidebar{
+    background-color: beige;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.content{
+    width: 75%;
+    background-color: blueviolet;
+    float: right;
+    text-align: center;
+}
+.footer{
+    background-color: chocolate;
+    text-align: center;
+}

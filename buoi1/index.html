@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cửa hàng thời trang hiện đại – bộ sưu tập mới, ưu đãi hấp dẫn." />
+    <title>MODA — Thời trang hiện đại</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <bodyy>
+    <!-- Floating gradient blobs for ambient motion -->
+    <div class="blobs">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#" class="logo" aria-label="MODA Home">MODA</a>
+        <nav class="menu">
+          <a href="#collections">Bộ sưu tập</a>
+          <a href="#products">Sản phẩm</a>
+          <a href="#sale" class="chip">Sale</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+        <div class="actions">
+          <a class="btn btn-outline" href="#products">Khám phá</a>
+          <a class="btn btn-primary" href="#products">Mua ngay</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__badge">BST Mùa Mới 2025</div>
+          <h1 class="hero__title">Thời trang hiện đại cho mọi phong cách</h1>
+          <p class="hero__subtitle">Chất liệu cao cấp, phom dáng tinh chỉnh, tinh thần tối giản. Tự tin mỗi ngày với những thiết kế tạo điểm nhấn.</p>
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="#products">Mua sắm ngay</a>
+            <a class="btn btn-ghost" href="#collections">Khám phá bộ sưu tập</a>
+          </div>
+          <div class="hero__stats">
+            <div><strong>500+</strong><span>Mẫu mới</span></div>
+            <div><strong>48h</strong><span>Giao nhanh</span></div>
+            <div><strong>30 ngày</strong><span>Đổi trả</span></div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80" alt="Bộ sưu tập thời trang hiện đại" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand/Style marquee -->
+    <section class="brands" aria-label="Phong cách">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>Urban</span>
+          <span>Minimal</span>
+          <span>Streetwear</span>
+          <span>Classic</span>
+          <span>Athleisure</span>
+          <span>Premium</span>
+          <!-- repeat to loop -->
+          <span>Urban</span>
+          <span>Minimal</span>
+          <span>Streetwear</span>
+          <span>Classic</span>
+          <span>Athleisure</span>
+          <span>Premium</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections" id="collections">
+      <div class="container">
+        <div class="section__head">
+          <h2>Bộ sưu tập nổi bật</h2>
+          <p>Lựa chọn phong cách của bạn</p>
+        </div>
+        <div class="collections__grid">
+          <a class="tile" href="#products" style="--bg:url('https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=1400&q=80')">
+            <span class="tile__label">Nam</span>
+            <span class="tile__cta">Xem ngay →</span>
+          </a>
+          <a class="tile" href="#products" style="--bg:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=80')">
+            <span class="tile__label">Nữ</span>
+            <span class="tile__cta">Khám phá →</span>
+          </a>
+          <a class="tile" href="#products" style="--bg:url('https://images.unsplash.com/photo-1514986888952-8cd320577b68?auto=format&fit=crop&w=1400&q=80')">
+            <span class="tile__label">Phụ kiện</span>
+            <span class="tile__cta">Mua ngay →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section__head">
+          <h2>Hàng mới về</h2>
+          <p>Những item hot nhất tuần này</p>
+        </div>
+        <div class="product__grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1520974735194-8d95d3f5f623?auto=format&fit=crop&w=800&q=80" alt="Áo khoác dáng dài" />
+              <span class="badge">Mới</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Áo khoác dáng dài</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#111"></span>
+                  <span style="--c:#7c3aed"></span>
+                  <span style="--c:#eab308"></span>
+                </div>
+                <div class="price">
+                  <strong>1.290.000₫</strong>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1503342394126-480259e7c9f0?auto=format&fit=crop&w=800&q=80" alt="Áo thun cổ tròn" />
+              <span class="badge badge--accent">Sale</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Áo thun cổ tròn</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#0ea5e9"></span>
+                  <span style="--c:#64748b"></span>
+                </div>
+                <div class="price">
+                  <strong>249.000₫</strong>
+                  <s>329.000₫</s>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Sơ mi oxford" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Sơ mi oxford</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#2563eb"></span>
+                  <span style="--c:#111827"></span>
+                  <span style="--c:#f97316"></span>
+                </div>
+                <div class="price">
+                  <strong>590.000₫</strong>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1520975922284-2f4f0d7351b6?auto=format&fit=crop&w=800&q=80" alt="Quần jeans slim" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Quần jeans slim</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#1f2937"></span>
+                  <span style="--c:#94a3b8"></span>
+                </div>
+                <div class="price">
+                  <strong>790.000₫</strong>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" alt="Đầm midi" />
+              <span class="badge">Mới</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Đầm midi</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#d946ef"></span>
+                  <span style="--c:#111827"></span>
+                </div>
+                <div class="price">
+                  <strong>1.190.000₫</strong>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Áo cardigan len" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Áo cardigan len</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#e11d48"></span>
+                  <span style="--c:#0ea5e9"></span>
+                </div>
+                <div class="price">
+                  <strong>690.000₫</strong>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1520975682031-a22a1a6ca409?auto=format&fit=crop&w=800&q=80" alt="Túi đeo chéo" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Túi đeo chéo</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#111827"></span>
+                  <span style="--c:#22c55e"></span>
+                </div>
+                <div class="price">
+                  <strong>490.000₫</strong>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1518544801976-3e159e50e5bb?auto=format&fit=crop&w=800&q=80" alt="Giày sneaker" />
+              <span class="badge badge--accent">-20%</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Giày sneaker</h3>
+              <div class="card__meta">
+                <div class="colors">
+                  <span style="--c:#111827"></span>
+                  <span style="--c:#f59e0b"></span>
+                  <span style="--c:#2563eb"></span>
+                </div>
+                <div class="price">
+                  <strong>990.000₫</strong>
+                  <s>1.240.000₫</s>
+                </div>
+              </div>
+              <a class="btn btn-soft" href="#">Thêm vào giỏ</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+      <div class="container benefits__grid">
+        <div class="benefit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12l2-2 4 4L21 4l2 2-14 14-6-6z" stroke="currentColor" stroke-width="1.5" fill="currentColor"/></svg>
+          <div>
+            <h4>Miễn phí vận chuyển</h4>
+            <p>Đơn hàng từ 499.000₫</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6h12v12H6z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div>
+            <h4>Đổi trả 30 ngày</h4>
+            <p>Dễ dàng & nhanh chóng</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div>
+            <h4>Giao hàng 48h</h4>
+            <p>Nội thành áp dụng</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="sale">
+      <div class="container">
+        <div class="news__card">
+          <div class="news__content">
+            <h3>Giảm thêm 10% cho đơn đầu tiên</h3>
+            <p>Đăng ký nhận bản tin để nhận ưu đãi & tin mới nhất.</p>
+          </div>
+          <form class="news__form">
+            <input type="email" placeholder="Nhập email của bạn" aria-label="Email" required />
+            <button class="btn btn-primary" type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="logo">MODA</a>
+          <p>Thời trang tối giản, chất lượng cao, bền vững với môi trường.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Mua sắm</h5>
+          <a href="#products">Nam</a>
+          <a href="#products">Nữ</a>
+          <a href="#products">Trẻ em</a>
+          <a href="#products">Phụ kiện</a>
+        </div>
+        <div class="footer__col">
+          <h5>Hỗ trợ</h5>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Giao hàng</a>
+          <a href="#">Đổi trả</a>
+        </div>
+        <div class="footer__col">
+          <h5>Theo dõi</h5>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <span>© 2025 MODA Co.</span>
+        <a href="#home" class="to-top" aria-label="Lên đầu trang">▲</a>
+      </div>
+    </footer>
+  </bodyy>
+  </html>
